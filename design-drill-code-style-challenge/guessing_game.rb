@@ -1,4 +1,5 @@
 class GuessingGame
+  
   VALID_NUMBERS = (1..100).to_a
 
   def initialize(answer)
@@ -20,6 +21,7 @@ class GuessingGame
     # Check if the guess is lower
     elsif number < @answer
       @solved = false
+      puts "Too low, try again."
         :low
     end
   end

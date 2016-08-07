@@ -5,7 +5,7 @@ describe GuessingGame do
 
   describe '#guess' do
     it 'alerts if a guess is too low' do
-      expect(game.guess(5)).to eq(:low)
+      expect(game.guess(5)).to eq("Too low, try again.")
     end
 
     it 'alerts if a guess is too high' do
